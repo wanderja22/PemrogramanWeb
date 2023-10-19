@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wans Fruits</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body onload="showModal()"> 
+    <nav>
+        <div class="logo">
+            <img src="buahlogo.png">
+        </div>
+        <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About Me</a></li> 
+            <li><a href="#Shop">Product</a></li>
+        </ul>
+        <div class="theme-toggle">
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+        </div>        
+    </nav>
+    <section id="Home">
+        <div id="modalbox">
+            <img src="buahlogo.png" class="buahhome">
+            <p>Selamat Datang di Toko Buah Wans</p>
+            <button type="button" id="acceptButton" onclick="closeModal()">Accept</button>
+            <img src="closelogo.png" class="close-logo" onclick="closeModal()">
+        </div>
+        <div class="home_left">
+            <h1 id="welcomeText">Welcome To<br><span>Wans Fruits</span></h1>
+            <img src="homeimage.png" alt="Nama Buah">
+        </div>
+
+        <div class="home_right anim">
+            <img src="1.png">
+        </div>
+    </section>
+    <section id="About">
+        <div class="about" id="aboutMeText">
+          <img src="aboutme.png" alt="">
+          <div class="text dark-text">
+            <h2>About Me</h2>
+            <h5>Nama saya <span class="dark-text">Yuan Maulvi Hafiizh</span></h5>
+            <p class="dark-text">Nim : 2209106107 <br>
+               Email : yhafiizh7@gmail.com</p>
+            <div class="data">
+            <a href="#" class="hire">Hire Me</a>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section id="Shop">
+        <div class="shop-container">
+            <div class="product">
+                <img src="appleproduct.png" alt="Product 1">
+                <h3>Apple</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="orangeproduct.png" alt="Product 2">
+                <h3>Orange</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="pineappleproduct.png" alt="Product 3">
+                <h3>Pineapple</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="grapeproduct.png" alt="Product 4">
+                <h3>Grape</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="bananaproduct.png" alt="Product 5">
+                <h3>Banana</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="mangoproduct.png" alt="Product 6">
+                <h3>Mango</h3>
+                <p></p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <button id="orderButton" class="cart-icon" onclick="window.location.href='tambah.php'">
+        <img src="cart.png" alt="Cart Icon">
+        <ul id="orderList"></ul>
+        <div id="orderDescriptionModal"></div>
+    </button>    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">Fruits</a></li>
+                        <li><a href="#">Seeds</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/wanderja22" target="_blank"><img src="githubfooter.png" alt="Github" style="width: 39px;"></a>                        
+                        <a href="https://twitter.com/yhafiizh7" target="_blank"><img src="twitterfooter.png" alt="Twitter" style="width: 39px;"></a>
+                        <a href="https://www.instagram.com/yhafiizh/" target="_blank"><img src="instagramfooter.png" alt="Instagram" style="width: 35px;"></a>
+                        <a href="https://discord.com/channels/@me" target="_blank"><img src="discordfooter.png" alt="Discord" style="width: 41px; margin-top: 0px;"></a>
+                    </div>
+                </div>                               
+            </div>
+        </div>
+   </footer>
+<script src="script.js"></script>    
+</body>
+</html>
